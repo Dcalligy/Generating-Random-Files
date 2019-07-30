@@ -40,6 +40,6 @@ for quizNum in range(35):
         quizFile.write('\n')
         
         # Write out the answer key to a file.
-        answerKeyFile.write('%s. %s\n' % (questionNum + 1, 'ABCD'[answerOptions.index(correctAnswer)]))
+        answerKeyFile.write('%s. %s\n' % (questionNum + 1, 'ABCD'[answerOptions.index(correctAnswer)])) # evaluates to the correct answer to be written out to the answer key to a file.
     quizFile.close()
     answerKeyFile.close()
